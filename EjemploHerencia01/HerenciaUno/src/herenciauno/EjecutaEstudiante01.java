@@ -14,7 +14,8 @@ public class EjecutaEstudiante01 {
 
         // a.  Declarar Variables
         Scanner entrada = new Scanner(System.in);
-        entrada.useLocale(Locale.US);
+        entrada.useLocale(Locale.US); // siempre use como separador de 
+                                      // decimales el punto.
 
         String nombresEst;
         String apellidosEst;
@@ -137,15 +138,12 @@ public class EjecutaEstudiante01 {
         // los valores que se necesite en pantalla
         // Imprimir:
         System.out.println("Datos del estudiante a Distancia");
-        System.out.printf("Nombre: %s\n",
-                estudianteD.obtenerNombresEstudiante());
-        System.out.printf("Apelllido: %s\n",
-                estudianteD.obtenerApellidoEstudiante());
-        System.out.printf("Identificación: %s\n",
-                estudianteD.obtenerIdentificacionEstudiante());
-        System.out.printf("Edad: %d\n",
-                estudianteD.obtenerEdadEstudiante());
-        System.out.printf("Matricula: %.2f\n",
+        System.out.printf("Nombre: %s\nApelllido: %s\nIdentificación: %s\n"
+                + "Edad: %d\nMatricula: %.2f\n",
+                estudianteD.obtenerNombresEstudiante(),
+                estudianteD.obtenerApellidoEstudiante(),
+                estudianteD.obtenerIdentificacionEstudiante(),
+                estudianteD.obtenerEdadEstudiante(),
                 estudianteD.obtenerMatriculaDistancia());
 
     }
